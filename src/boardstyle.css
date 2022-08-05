@@ -1,16 +1,16 @@
-/* {
+ *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}*/
+}
  
   .root {
-color: #994851;
+  color: #994851;
   }
 
   .image{
-    width: 120px;
-    height: 140px;
+    width: 140px;
+    height: 160px;
     }
   
     .hide {
@@ -29,6 +29,17 @@ color: #994851;
       perspective: 1000px;
     }
 
+    .card {
+      position: relative;
+      
+    }
+
+    .cardBack {
+      position: absolute;
+      visibility: hidden;
+
+    }
+    
     
 
     
