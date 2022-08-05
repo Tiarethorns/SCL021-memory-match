@@ -37,16 +37,12 @@ board.className = "board";
 
    //console.log(baraja[i].image)
 
-   const cardBack = document.createElement("div");
-    cardBack.className = "cardBack";
-    
-
-      
-    
+    const cardBack = document.createElement("div");
+    cardBack.className = "cardBack";  
     card.appendChild(cardBack);
  
 
-   const backImage = document.createElement("img");
+    const backImage = document.createElement("img");
     backImage.className = "pkmn";
     backImage.src = barajaDoble[i].image;
     backImage.id = barajaDoble[i].id;
@@ -63,8 +59,15 @@ board.className = "board";
     cardImage.src = "https://img.game.co.uk/assets/features/hubs/pokemon/backCover.png";
     cardFront.appendChild(cardImage);
     cardImage.onclick = () => {
+   
+    cardImage.classList.add ("hide")
+
+    cardBack.onclick = () => {
       console.log(barajaDoble[i].image)
-      cardImage.classList.add ("hide")
+      cardBack.classList.add ("show")
+
+    }
+    
     }
   }
    
@@ -89,6 +92,6 @@ board.className = "board";
 
 
   return el; */
-  }
+}
 export default App;
 

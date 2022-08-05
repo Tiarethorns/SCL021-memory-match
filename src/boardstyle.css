@@ -1,16 +1,17 @@
-/* {
+ * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
   border: 1px solid red;
   color: #994851;
   background: rgb(255,222,222);
   background: radial-gradient(circle, rgba(255,222,222,1) 0%, rgba(171,201,255,1) 100%);
   }
+  
   h1 {
     color: rebeccapurple
-  } */
+  } 
+
 .board {
  display: flex;
   width: 100vh;
@@ -19,13 +20,21 @@
 
 .root {
 color: #994851;
-  
 }
 
 .image{
     width: 120px;
     height: 160px;
-  
+}
+ 
+  .root {
+  color: #994851;
+  }
+
+  .image{
+    width: 140px;
+    height: 160px;
+
     }
   
   .hide {
@@ -49,6 +58,17 @@ color: #994851;
       perspective: 1000px;
     }
 
+    .card {
+      position: relative;
+      
+    }
+
+    .cardBack {
+      position: absolute;
+      visibility: hidden;
+
+    }
+    
     
 
     
