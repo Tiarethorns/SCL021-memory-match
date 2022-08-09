@@ -13,16 +13,14 @@ import pokemon from "../data/pokemon/pokemon.js";
 //   .then(console.log)
 //   .catch(console.error);
 //
-let flipTwo = []
+let flipTwo = [];
 const handleClick = (cardBack, cardFront, event) => {
   cardBack.classList.add("show");
   cardBack.classList.remove("hide");
   cardFront.classList.add("hide");
-  cardFront.classList.remove("show");  
-  console.log(event.target)
-  
+  cardFront.classList.remove("show");
+  //console.log(event.target)
 };
-
 
 const App = () => {
   const baraja = pokemon.items;
@@ -37,8 +35,6 @@ const App = () => {
 
   const board = document.createElement("div");
   board.className = "board";
-
-  let contador = 0;
 
   //const el = document.createElement("div");
   for (let i = 0; i < barajaDoble.length; i++) {
@@ -72,10 +68,44 @@ const App = () => {
     cardFront.appendChild(cardImage);
 
     cardFront.onclick = (event) => {
-      handleClick (cardBack, cardFront, event)
-    };   
+      handleClick(cardBack, cardFront, event);
+      flipTwo.push(barajaDoble[i].id);
+    }
+      console.log(flipTwo);
+     
+      /*let contador = 0;
+
+       if (handleClick.length === 2) {
+        if (
+          handleClick[0](barajaDoble[i].id) ===
+          handleClick[1](barajaDoble[i].id)
+        ) {
+          contador++;
+        }else{
+          setTimeout(
+            () => handleClick[1].cardBack.classList.remove("hide"),
+            1000
+          );
+          setTimeout(
+            () => handleClick[0].cardBack.classList.remove("hide"),
+            1000
+          );
+        }
+
+        if (contador === 9) {
+          setTimeout(
+            () =>
+              Swal.fire('Buen trabajo!',
+              'Terminaste el juego!',
+              'Si que conoces muy bien a esos pokemón'),
+            850
+          );
+        }
+      }*/
+    };
   }
 
   return board;
-};
+
+
 export default App;
