@@ -38,6 +38,9 @@ padding-top: 10px
 }
 
 /*nav bar*/
+.Pokemon-Logo {
+padding-right: 800px;
+} 
 .topnav {
     overflow: hidden;
     background-color: transparent;
@@ -171,3 +174,30 @@ footer {
   margin-left: 92%;
   margin-bottom: 10px;
 }
+/*Footer*/
+
+/*Tercera pantalla*/
+h3{ 
+  color: #EB4747; 
+  font-family: 'Trocchi', serif; 
+  font-size: 45px; font-weight: normal; 
+  line-height: 48px; 
+  margin: 0;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  }
+  
+  h4 {
+  font-family: 'Trocchi', serif; 
+  font-size: 24px; 
+  font-weight: normal; 
+  line-height: 48px; 
+  margin: 0;
+  color: #EB4747;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px
+  }

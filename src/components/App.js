@@ -22,6 +22,8 @@ const handleClick = (cardBack, cardFront, event) => {
   //console.log(event.target)
 };
 
+let contador = 0;
+
 const App = () => {
   const baraja = pokemon.items;
   //console.log(baraja);
@@ -46,6 +48,12 @@ const App = () => {
 
     const cardBack = document.createElement("div");
     cardBack.className = "hide";
+    cardBack.classList.add("back"); // agregamos clase back para representar divs de tarjeta trasera
+    cardBack.setAttribute("data-id", barajaDoble[i].id);
+    cardBack.setAttribute("data-index", i);
+
+
+
     cards.appendChild(cardBack);
 
     const backImage = document.createElement("img");
@@ -58,6 +66,10 @@ const App = () => {
     cardFront.id = i;
     cardFront.name = barajaDoble[i].id;
     cardFront.className = "cardFront";
+    cardFront.classList.add("front"); // agregamos clase front para representar divs de tarjeta frontal
+    cardFront.setAttribute("data-id", barajaDoble[i].id);
+    cardFront.setAttribute("data-index", i);
+
     cards.appendChild(cardFront);
 
     const cardImage = document.createElement("img");
@@ -66,37 +78,48 @@ const App = () => {
     cardImage.src =
       "https://img.game.co.uk/assets/features/hubs/pokemon/backCover.png";
     cardFront.appendChild(cardImage);
-    cardImage.onclick = () => {
+
+    cardFront.onclick = (event) => {
+      handleClick(cardBack, cardFront, event);
+      flipTwo.push({id:barajaDoble[i].id,index:i})
+      console.log(flipTwo);
+
+      if (flipTwo.length === 2) {
+        if (
+          flipTwo[0].id === flipTwo[1].id
+          
+        ) {
+          contador++;
+        }else{
+          setTimeout(
+            () => cardBack.classList.remove("hide"),
+            1000
+          );
+          setTimeout(
+            () => cardBack.classList.remove("hide"),
+            1000
+          );
+        }
+
+        if (contador === 9) {
+          setTimeout(
+            () =>
+              Swal.fire('Buen trabajo!',
+              'Terminaste el juego!',
+              'Si que conoces muy bien a esos pokemón'),
+            850
+          );
+        }
+      }
+    };
    
-    cardImage.classList.add ("hide")
 
-    cardBack.onclick = () => {
-      console.log(barajaDoble[i].image)
-      cardBack.classList.add ("show")
-
-    }
-    }
+   
+    
+    
   }
-}
-   return board;
-   
-   
-   
-    /* const el = document.createElement('div');
-    el.className = 'memory-card';
-    const frontFace = document.createElement('img');
-    frontFace.className = "front-face";
-    frontFace.src = baraja[i].image 
+
   
-    const backFace = document.createElement('img');
-    backFace.className = "back-face";
-    backFace.src = "https://img.game.co.uk/assets/features/hubs/pokemon/backCover.png"
-    el.appendChild(frontFace);
-    el.appendChild(backFace);
-
-  }
-
-
-
-export default App; 
-*/
+  return board;
+};
+export default App;
