@@ -22,6 +22,8 @@ const handleClick = (cardBack, cardFront, event) => {
   //console.log(event.target)
 };
 
+let contador = 0;
+
 const App = () => {
   const baraja = pokemon.items;
   //console.log(baraja);
@@ -46,6 +48,12 @@ const App = () => {
 
     const cardBack = document.createElement("div");
     cardBack.className = "hide";
+    cardBack.classList.add("back"); // agregamos clase back para representar divs de tarjeta trasera
+    cardBack.setAttribute("data-id", barajaDoble[i].id);
+    cardBack.setAttribute("data-index", i);
+
+
+
     cards.appendChild(cardBack);
 
     const backImage = document.createElement("img");
@@ -58,6 +66,10 @@ const App = () => {
     cardFront.id = i;
     cardFront.name = barajaDoble[i].id;
     cardFront.className = "cardFront";
+    cardFront.classList.add("front"); // agregamos clase front para representar divs de tarjeta frontal
+    cardFront.setAttribute("data-id", barajaDoble[i].id);
+    cardFront.setAttribute("data-index", i);
+
     cards.appendChild(cardFront);
 
     const cardImage = document.createElement("img");
@@ -69,25 +81,22 @@ const App = () => {
 
     cardFront.onclick = (event) => {
       handleClick(cardBack, cardFront, event);
-      flipTwo.push(barajaDoble[i].id);
-    }
+      flipTwo.push({id:barajaDoble[i].id,index:i})
       console.log(flipTwo);
-     
-      /*let contador = 0;
 
-       if (handleClick.length === 2) {
+      if (flipTwo.length === 2) {
         if (
-          handleClick[0](barajaDoble[i].id) ===
-          handleClick[1](barajaDoble[i].id)
+          flipTwo[0].id === flipTwo[1].id
+          
         ) {
           contador++;
         }else{
           setTimeout(
-            () => handleClick[1].cardBack.classList.remove("hide"),
+            () => cardBack.classList.remove("hide"),
             1000
           );
           setTimeout(
-            () => handleClick[0].cardBack.classList.remove("hide"),
+            () => cardBack.classList.remove("hide"),
             1000
           );
         }
@@ -101,11 +110,20 @@ const App = () => {
             850
           );
         }
-      }*/
+      }
     };
+   
+
+   
+
+       
   }
 
+  
+
   return board;
+};
+
 
 
 export default App;
