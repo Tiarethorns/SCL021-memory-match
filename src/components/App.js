@@ -66,44 +66,36 @@ const App = () => {
     cardImage.src =
       "https://img.game.co.uk/assets/features/hubs/pokemon/backCover.png";
     cardFront.appendChild(cardImage);
+    cardImage.onclick = () => {
+   
+    cardImage.classList.add ("hide")
 
-    cardFront.onclick = (event) => {
-      handleClick(cardBack, cardFront, event);
-      flipTwo.push(barajaDoble[i].id);
+    cardBack.onclick = () => {
+      console.log(barajaDoble[i].image)
+      cardBack.classList.add ("show")
+
     }
-      console.log(flipTwo);
-     
-      /*let contador = 0;
-       if (handleClick.length === 2) {
-        if (
-          handleClick[0](barajaDoble[i].id) ===
-          handleClick[1](barajaDoble[i].id)
-        ) {
-          contador++;
-        }else{
-          setTimeout(
-            () => handleClick[1].cardBack.classList.remove("hide"),
-            1000
-          );
-          setTimeout(
-            () => handleClick[0].cardBack.classList.remove("hide"),
-            1000
-          );
-        }
-        if (contador === 9) {
-          setTimeout(
-            () =>
-              Swal.fire('Buen trabajo!',
-              'Terminaste el juego!',
-              'Si que conoces muy bien a esos pokemón'),
-            850
-          );
-        }
-      }*/
-    };
+    }
+  }
+   
+   return board;
+   
+   
+   
+    /* const el = document.createElement('div');
+    el.className = 'memory-card';
+    const frontFace = document.createElement('img');
+    frontFace.className = "front-face";
+    frontFace.src = baraja[i].image 
+  
+    const backFace = document.createElement('img');
+    backFace.className = "back-face";
+    backFace.src = "https://img.game.co.uk/assets/features/hubs/pokemon/backCover.png"
+    el.appendChild(frontFace);
+    el.appendChild(backFace);
+
   }
 
-  return board;
 
 
 export default App;
