@@ -77,7 +77,7 @@ const App = () => {
     }
     }
   }
-   
+}
    return board;
    
    
@@ -98,4 +98,5 @@ const App = () => {
 
 
 
-export default App;
+export default App; 
+*/
