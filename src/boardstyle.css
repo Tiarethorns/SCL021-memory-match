@@ -1,30 +1,7 @@
- * {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid red;
-  color: #994851;
-  background: rgb(255,222,222);
-  background: radial-gradient(circle, rgba(255,222,222,1) 0%, rgba(171,201,255,1) 100%);
-  }
-  
-  h1 {
-    color: rebeccapurple
-  } 
-
-.board {
- display: flex;
-  width: 100vh;
-  height: 100vh;
-}
-
-.root {
-color: #994851;
-}
-
-.image{
-    width: 120px;
-    height: 160px;
 }
  
   .root {
@@ -34,22 +11,16 @@ color: #994851;
   .image{
     width: 140px;
     height: 160px;
-
     }
   
-  .hide {
+    .hide {
       display: none;
     }
-  .show {
+    .show {
       display: block;
     }
 
-  .pkmn {
-      background-color: transparent;
-      display: inline-block
-    }
-
-.board {
+    .board {
       width: 740px;
       height: 640px;
       margin: auto;
@@ -58,18 +29,21 @@ color: #994851;
       perspective: 1000px;
     }
 
-    .card {
+    .cards {
       position: relative;
       
     }
 
     .cardBack {
       position: absolute;
-      visibility: hidden;
+      /*visibility: hidden;*/
 
     }
     
-    
+    .match {
+      display: block;
+    }
+
 
     
     
@@ -131,4 +105,3 @@ color: #994851;
       transform: rotateY(180deg);
     }/*
     
-
