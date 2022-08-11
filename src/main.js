@@ -4,6 +4,7 @@ document.getElementById('root').appendChild(App());
 let domCardsFront = document.querySelectorAll(".front")
   console.log(domCardsFront);
 
+
   let domCardsBack = document.querySelectorAll(".back")
   console.log(domCardsBack);
 
@@ -52,6 +53,8 @@ let domCardsFront = document.querySelectorAll(".front")
 
 
 
+
+  
 /*function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
