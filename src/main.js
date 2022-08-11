@@ -4,8 +4,10 @@ document.getElementById("root").appendChild(App());
 let domCardsFront = document.querySelectorAll(".front");
 console.log(domCardsFront);
 
+
 let domCardsBack = document.querySelectorAll(".back");
 console.log(domCardsBack);
+
 
 let contador = 0;
 console.log(contador);
@@ -61,6 +63,8 @@ domCardsFront.forEach(function (item) {
   });
 });
 
+
+  
 /*function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
