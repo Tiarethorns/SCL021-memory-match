@@ -4,6 +4,7 @@ document.getElementById('root').appendChild(App());
 let domCardsFront = document.querySelectorAll(".front")
   console.log(domCardsFront);
 
+
   let domCardsBack = document.querySelectorAll(".back")
   console.log(domCardsBack);
 
@@ -17,9 +18,9 @@ let domCardsFront = document.querySelectorAll(".front")
       console.log({indexObtained});
       flipTwo.push(idObtained);
       idsFlipped.push(indexObtained);
-      
 
-     
+
+      
       if( flipTwo.length===2){
         console.log({idsFlipped})
        if(flipTwo[0] === flipTwo[1]){
@@ -49,6 +50,8 @@ let domCardsFront = document.querySelectorAll(".front")
 
     })
   })
+
+
 
 
   

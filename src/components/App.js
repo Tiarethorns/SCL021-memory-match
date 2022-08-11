@@ -115,12 +115,6 @@ const App = () => {
    
 
    
-    
-    
-  }
-
-
-  
   return board;
 };
 
