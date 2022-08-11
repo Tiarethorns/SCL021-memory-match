@@ -51,9 +51,11 @@ domCardsFront.forEach(function (item) {
           domCardsBack[idsFlipped[0]].classList.remove("show");
           domCardsBack[idsFlipped[0]].classList.add("hide");
           domCardsFront[idsFlipped[0]].classList.add("show");
+          domCardsFront[idsFlipped[0]].classList.remove("hide")
           domCardsBack[idsFlipped[1]].classList.remove("show");
           domCardsBack[idsFlipped[1]].classList.add("hide");
           domCardsFront[idsFlipped[1]].classList.add("show");
+          domCardsFront[idsFlipped[1]].classList.remove("hide");
           idsFlipped = [];
         }, 350);
       }
