@@ -24,6 +24,8 @@
   },
   "jest": {
     "testEnvironment": "jsdom"
+  },
+  "dependencies": {
+    "sweetalert2": "^11.4.26"
   }
 }
-

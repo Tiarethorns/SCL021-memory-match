@@ -76,7 +76,7 @@ const App = () => {
     cardImage.alt = "pokeball";
     cardImage.className = "image";
     cardImage.src =
-      "https://img.game.co.uk/assets/features/hubs/pokemon/backCover.png";
+      "https://pngimg.com/uploads/pokeball/pokeball_PNG22.png";
     cardFront.appendChild(cardImage);
 
     cardFront.onclick = (event) => {
@@ -101,15 +101,19 @@ const App = () => {
           );
         }
 
-        if (contador === 9) {
+        /*if (contador === 9) {
           setTimeout(
             () =>
-              Swal.fire('Buen trabajo!',
-              'Terminaste el juego!',
-              'Si que conoces muy bien a esos pokemón'),
+            Swal.fire({
+              title: "¡FELICITACIONES!",
+              text: "Eres un verdadero maestro Pokemon",
+              imageUrl: "./images/oak.gif",
+              imageWidth: 400,
+              imageHeight: 250,
+            }),
             850
           );
-        }
+        }*/
       }
     };
    
