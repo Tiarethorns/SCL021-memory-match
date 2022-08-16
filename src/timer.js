@@ -7,7 +7,7 @@ alert('Usuario creado con éxito correctamente. Bienvenido ' + (name));
 
 
 var timer; 
-var timeLeft = 60; // seconds
+var timeLeft = 30; // seconds
 
 // What to do when the timer runs out
 function gameOver() {
