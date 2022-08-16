@@ -14,7 +14,7 @@ import pokemon from "../data/pokemon/pokemon.js";
 //   .catch(console.error);
 //
 let flipTwo = [];
-const handleClick = (cardBack, cardFront, event) => {
+const handleClick = (cardBack, cardFront) => {
   cardBack.classList.add("show");
   cardBack.classList.remove("hide");
   cardFront.classList.add("hide");
@@ -119,9 +119,14 @@ const App = () => {
    
 
    
+
+
+  }
+
+
+  
   return board;
 };
-
 
 
 export default App;
