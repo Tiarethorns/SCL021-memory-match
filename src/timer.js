@@ -1,10 +1,6 @@
-let name = document.getElementById('name');
-console.log(name);
-alert('Usuario creado con éxito correctamente. Bienvenido ' + (name));
-
-
-
-
+let studentname = document.getElementsById(studentname).value;
+let Cohorte = document.getElementsById(Cohorte).value;
+alert('Bienvenid@ ' + (studentname) + 'del cohorte' + (Cohorte));
 
 var timer; 
 var timeLeft = 30; // seconds

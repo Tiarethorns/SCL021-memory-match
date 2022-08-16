@@ -105,9 +105,9 @@ input,
 label {
     margin: .4rem 0;
 }
-#name {
+#studentname {
     font-family: 'Trocchi', serif; 
-font-size: 24px;
+    font-size: 24px;
     text-align: center;
     align-items: center;
     border-radius: 20px;
@@ -116,7 +116,7 @@ font-size: 24px;
     }
 #cohorte {
     font-family: 'Trocchi', serif; 
-font-size: 24px;
+    font-size: 24px;
     text-align: center;
     align-items: center;
     border-radius: 20px;
