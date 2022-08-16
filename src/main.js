@@ -1,4 +1,17 @@
 import App from "./components/App.js";
+/* timer 
+   sec++;
+if (sec == 60) {
+  min = min + 1;
+  sec = 0;
+}
+if (min == 60) {
+  hr = hr + 1;
+  min = 0;
+  sec = 0;
+}
+elStopwatch.innerHTML = hr + ":" + min + ":" + sec; 
+timer */
 
 document.getElementById("root").appendChild(App());
 let domCardsFront = document.querySelectorAll(".front");
