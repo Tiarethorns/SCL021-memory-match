@@ -1,3 +1,10 @@
+let queryParams = new URLSearchParams(window.location.search);
+
+let name = params.get("Name");
+let cohorte = params.get("Cohorte");
+console.log("Name")
+alert ("Hola" + ("Name") + "del cohorte" + ("Cohorte") + "ahora pondrás a prueba tu memoria");
+
 var timer; 
 var timeLeft = 30; // seconds
 
