@@ -1,7 +1,3 @@
-let studentname = document.getElementsById(studentname).value;
-let Cohorte = document.getElementsById(Cohorte).value;
-alert('Bienvenid@ ' + (studentname) + 'del cohorte' + (Cohorte));
-
 var timer; 
 var timeLeft = 30; // seconds
 
@@ -28,7 +24,7 @@ function start() {
   // setInterval is a built-in function that will call the given function
   // every N milliseconds (1 second = 1000 ms)
   timer = setInterval(updateTimer, 1000);
-  console.log (start)
+  console.log('start')
   
   // It will be a whole second before the time changes, so we'll call the update
   // once ourselves
