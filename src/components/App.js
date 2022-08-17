@@ -84,7 +84,7 @@ const App = () => {
       flipTwo.push({id:barajaDoble[i].id,index:i})
       console.log(flipTwo);
 
-      if (flipTwo.length === 2) {
+     /* if (flipTwo.length === 2) {
         if (
           flipTwo[0].id === flipTwo[1].id
           
@@ -113,8 +113,8 @@ const App = () => {
             }),
             850
           );
-        }*/
-      }
+        }
+      } */
     };
    
 
