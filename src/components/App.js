@@ -13,8 +13,8 @@ import pokemon from "../data/pokemon/pokemon.js";
 //   .then(console.log)
 //   .catch(console.error);
 //
-let flipTwo = [];
-const handleClick = (cardBack, cardFront) => {
+let flipTwo = []; // arreglo que acumula los datos a comparar posteriormente
+const handleClick = (cardBack, cardFront) => { // Funcion que da el giro a la carta al hacer el click para lo que utilizamos clases de show y hide
   cardBack.classList.add("show");
   cardBack.classList.remove("hide");
   cardFront.classList.add("hide");
@@ -22,44 +22,44 @@ const handleClick = (cardBack, cardFront) => {
   //console.log(event.target)
 };
 
-let contador = 0;
 
-const App = () => {
+
+const App = () => { // traemos los items desde la data 
   const baraja = pokemon.items;
   //console.log(baraja);
 
-  var barajaDoble = baraja.concat(baraja);
+  var barajaDoble = baraja.concat(baraja); //multiplicar las imagenes de la data por dos para generar los pares de cartas
 
-  function shuffle() {
+  function shuffle() { //Función me mezcla las cartas
     barajaDoble.sort(() => Math.random() - 0.5);
   }
   shuffle();
 
-  const board = document.createElement("div");
+  const board = document.createElement("div"); //División tablero
   board.className = "board";
 
   //const el = document.createElement("div");
-  for (let i = 0; i < barajaDoble.length; i++) {
-    const cards = document.createElement("div");
-    cards.className = "cards";
-    board.appendChild(cards);
+  for (let i = 0; i < barajaDoble.length; i++) { //Ciclo para crear tarjetas y sus parejas desde el array.
+    const cards = document.createElement("div"); //Cada recorrido genera una carta que corresponde a un div.
+    cards.className = "cards"; //Nombre de clase DIVS tarjetas.
+    board.appendChild(cards); //Insertamos los DIVS de las cartas en tablero con appenChild
 
     //console.log(baraja[i].image)
 
-    const cardBack = document.createElement("div");
-    cardBack.className = "hide";
+    const cardBack = document.createElement("div"); //Constante para separar la parte de adelante de las cartas.
+    cardBack.className = "hide"; //Le dimos la clase "hide" para que el pokemón se esconda (Creado en CSS).
     cardBack.classList.add("back"); // agregamos clase back para representar divs de tarjeta trasera
     cardBack.setAttribute("data-id", barajaDoble[i].id);
     cardBack.setAttribute("data-index", i);
 
 
 
-    cards.appendChild(cardBack);
+    cards.appendChild(cardBack); //Insertamos el DIV cardBack dentro del div Cards
 
-    const backImage = document.createElement("img");
+    const backImage = document.createElement("img"); //Creamos el reverso de las cartas
     //backImage.className = "hide";
-    backImage.src = barajaDoble[i].image;
-    backImage.id = barajaDoble[i].id;
+    backImage.src = barajaDoble[i].image; //Se asigna imagen de la data DIV creado
+    backImage.id = barajaDoble[i].id; //Se asigna id 
     cardBack.appendChild(backImage);
 
     const cardFront = document.createElement("div");
@@ -72,7 +72,7 @@ const App = () => {
 
     cards.appendChild(cardFront);
 
-    const cardImage = document.createElement("img");
+    const cardImage = document.createElement("img"); //Constante para atribuir imagen a la parte de las cartas que es visible por el usuario (Pokebolas)
     cardImage.alt = "pokeball";
     cardImage.className = "image";
     cardImage.src =
@@ -84,37 +84,6 @@ const App = () => {
       flipTwo.push({id:barajaDoble[i].id,index:i})
       console.log(flipTwo);
 
-      if (flipTwo.length === 2) {
-        if (
-          flipTwo[0].id === flipTwo[1].id
-          
-        ) {
-          contador++;
-        }else{
-          setTimeout(
-            () => cardBack.classList.remove("hide"),
-            1000
-          );
-          setTimeout(
-            () => cardBack.classList.remove("hide"),
-            1000
-          );
-        }
-
-        /*if (contador === 9) {
-          setTimeout(
-            () =>
-            Swal.fire({
-              title: "¡FELICITACIONES!",
-              text: "Eres un verdadero maestro Pokemon",
-              imageUrl: "./images/oak.gif",
-              imageWidth: 400,
-              imageHeight: 250,
-            }),
-            850
-          );
-        }*/
-      }
     };
    
 

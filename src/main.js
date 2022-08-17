@@ -27,7 +27,7 @@ console.log(contador);
 
 let flipTwo = [];
 let idsFlipped = [];
-let index = [];
+//let index = [];
 domCardsFront.forEach(function (item) {
   item.addEventListener("click", function () {
     let idObtained = item.getAttribute("data-id");
