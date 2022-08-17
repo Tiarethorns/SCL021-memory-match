@@ -1,21 +1,22 @@
 let queryParams = new URLSearchParams(window.location.search);
 
-let name = params.get("Name");
-let cohorte = params.get("Cohorte");
-console.log("Name")
-alert ("Hola" + ("Name") + "del cohorte" + ("Cohorte") + "ahora pondrás a prueba tu memoria");
+let nameUser = queryParams.get("name");
+let cohorte = queryParams.get("cohorte");
+console.log(nameUser)
+alert ("Hola " + nameUser + " del cohorte " + cohorte + "ahora pondrás a prueba tu memoria");
+
 
 var timer; 
 var timeLeft = 30; // seconds
 
 // What to do when the timer runs out
-function gameOver() {
+/*function gameOver() {
   // This cancels the setInterval, so the updateTimer stops getting called
   cancelInterval(timer);
   
   // re-show the button, so they can start it again
   $('#playAgainButton').show();
-}
+}*/
 
 function updateTimer() {
   timeLeft = timeLeft - 1;
