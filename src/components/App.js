@@ -23,12 +23,12 @@ const handleClick = (cardBack, cardFront) => {
 };
 
 
-function shuffle(barajaDoble) {
-  barajaDoble.sort(() => Math.random() - 0.5);
-}
 
 const App = (baraja) => {
  // const baraja = pokemon.items;
+ function shuffle() {
+   barajaDoble.sort(() => Math.random() - 0.5);
+ }
   //console.log(baraja);
 
   var barajaDoble = baraja.concat(baraja);
