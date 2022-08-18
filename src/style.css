@@ -13,8 +13,13 @@ body {
     }
 
 h1{ 
-color: #EB4747; 
+color: #F675A8; 
 font-family: 'Pokemon Solid', sans-serif;
+text-shadow:
+3px  3px 4px black,
+3px -3px 4px black,
+-3px  3px 4px black,
+-3px -3px 4px black;
 font-size: 45px; font-weight: normal; 
 line-height: 48px; 
 margin: 0;
@@ -31,7 +36,7 @@ font-size: 24px;
 font-weight: normal; 
 line-height: 48px; 
 margin: 0;
-color: #EB4747;
+color: black;
 text-align: center;
 padding-left: 100px;
 padding-right: 100px;
@@ -50,7 +55,12 @@ padding-right: 800px;
   .topnav a {
     float: right;
     display: block;
-    color: #EB4747;
+    color: #F675A8;
+    text-shadow:
+    1px  1px 2px black,
+    1px -1px 2px black,
+   -1px  1px 2px black,
+   -1px -1px 2px black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -59,13 +69,13 @@ padding-right: 800px;
   }
   
   .topnav a:hover {
-    background-color: #EB4747;
+    background-color: #F675A8;
     color: #f2f2f2;
   }
   
   .topnav a.active {
     background-color: #ffffff;
-    color: #EB4747;
+    color: #F675A8;
   }
   
   .topnav .icon {
@@ -132,7 +142,7 @@ label {
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #EB4747;
+    color: #F675A8;
     cursor: pointer;
     border: 3px solid;
     padding: 0.25em 0.5em;
@@ -179,9 +189,14 @@ footer {
 
 /*Tercera pantalla*/
 h3{ 
-  color: #EB4747; 
+  color: #F675A8; 
   font-family: 'Pokemon Solid', sans-serif; 
   font-size: 45px; font-weight: normal; 
+  text-shadow:
+    3px  3px 4px black,
+    3px -3px 4px black,
+   -3px  3px 4px black,
+   -3px -3px 4px black;
   line-height: 48px; 
   margin: 0;
   text-align: center;
@@ -197,7 +212,7 @@ h3{
   font-weight: normal; 
   line-height: 48px; 
   margin: 0;
-  color: #EB4747;
+  color: black;
   text-align: center;
   padding-left: 100px;
   padding-right: 100px;
