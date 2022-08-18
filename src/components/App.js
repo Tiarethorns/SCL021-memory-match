@@ -2,7 +2,7 @@
 // Para incluir los diferentes sets de cartas podemos _importar_ el archivo
 // JavasSript que contenga el `export` correspondiente...
 //
-import pokemon from "../data/pokemon/pokemon.js";
+//import pokemon from "../data/pokemon/pokemon.js";
 //console.log(pokemon);
 //
 // O alternativamente podríamos cargar el JSON de forma asíncrona usando
@@ -23,16 +23,16 @@ const handleClick = (cardBack, cardFront) => {
 };
 
 
+function shuffle(barajaDoble) {
+  barajaDoble.sort(() => Math.random() - 0.5);
+}
 
-const App = () => {
-  const baraja = pokemon.items;
+const App = (baraja) => {
+ // const baraja = pokemon.items;
   //console.log(baraja);
 
   var barajaDoble = baraja.concat(baraja);
 
-  function shuffle() {
-    barajaDoble.sort(() => Math.random() - 0.5);
-  }
   shuffle();
 
   const board = document.createElement("div");

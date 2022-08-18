@@ -1,4 +1,5 @@
 import App from "./components/App.js";
+import pokemon from "./data/pokemon/pokemon.js";
 /* timer 
    sec++;
 if (sec == 60) {
@@ -13,7 +14,7 @@ if (min == 60) {
 elStopwatch.innerHTML = hr + ":" + min + ":" + sec; 
 timer */
 
-document.getElementById("root").appendChild(App());
+document.getElementById("root").appendChild(App(pokemon.items));
 let domCardsFront = document.querySelectorAll(".front");
 console.log(domCardsFront);
 
