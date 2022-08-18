@@ -46,15 +46,18 @@ domCardsFront.forEach(function (item) {
         flipTwo = [];
         idsFlipped = [];
 
-        if (contador === 9) {
+        if (contador =1) {
           console.log(contador);
           setTimeout(
             () =>
-              Swal.fire(
-                "Buen trabajo!",
-                "Terminaste el juego!",
-                "Si que conoces muy bien a esos pokemón"
-              ),
+            Swal.fire({
+              title: "¡FELICITACIONES!",
+              text: "Eres un verdadero maestro Pokemon",
+              imageUrl: "/memorymatchtiarenico/Laboratoria.png",
+              imageWidth: 400,
+              imageHeight: 250,
+              footer: '<a href="pantalla3.html">graba tus datos de ganador!</a>'
+            }),
             850
           );
         }

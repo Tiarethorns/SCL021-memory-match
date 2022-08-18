@@ -84,37 +84,7 @@ const App = () => {
       flipTwo.push({id:barajaDoble[i].id,index:i})
       console.log(flipTwo);
 
-     /* if (flipTwo.length === 2) {
-        if (
-          flipTwo[0].id === flipTwo[1].id
-          
-        ) {
-          contador++;
-        }else{
-          setTimeout(
-            () => cardBack.classList.remove("hide"),
-            1000
-          );
-          setTimeout(
-            () => cardBack.classList.remove("hide"),
-            1000
-          );
-        }
-
-        /*if (contador === 9) {
-          setTimeout(
-            () =>
-            Swal.fire({
-              title: "¡FELICITACIONES!",
-              text: "Eres un verdadero maestro Pokemon",
-              imageUrl: "./images/oak.gif",
-              imageWidth: 400,
-              imageHeight: 250,
-            }),
-            850
-          );
-        }
-      } */
+      
     };
    
 
