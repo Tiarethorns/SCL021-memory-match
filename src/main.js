@@ -51,9 +51,9 @@ domCardsFront.forEach(function (item) {
           setTimeout(
             () =>
             Swal.fire({
-              title: "¡FELICITACIONES!",
+              title: "¡LO LOGRASTE!",
               text: "Eres un verdadero maestro Pokemon",
-              imageUrl: "/memorymatchtiarenico/Laboratoria.png",
+              imageUrl: "/memorymatchtiarenico/Pokemon-Logo.png",
               imageWidth: 400,
               imageHeight: 250,
               footer: '<a href="pantalla3.html">graba tus datos de ganador!</a>'
