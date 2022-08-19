@@ -47,17 +47,17 @@ domCardsFront.forEach(function (item) {
         flipTwo = [];
         idsFlipped = [];
 
-        if (contador =1) {
+        if (contador === 9) {
           console.log(contador);
           setTimeout(
             () =>
             Swal.fire({
-              title: "¡LO LOGRASTE!",
+              title: "¡Felicitaciones!",
               text: "Eres un verdadero maestro Pokemon",
-              imageUrl: "/memorymatchtiarenico/Pokemon-Logo.png",
+              imageUrl: "/memorymatchtiarenico/whatpkm.gif",
               imageWidth: 400,
               imageHeight: 250,
-              footer: '<a href="pantalla3.html">graba tus datos de ganador!</a>'
+              footer: '<a href="pantalla3.html">Siguiente</a>'
             }),
             850
           );

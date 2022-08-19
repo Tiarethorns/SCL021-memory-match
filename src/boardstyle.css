@@ -1,21 +1,21 @@
 *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
   align-items: center;
   align-self: center;
   align-content: center;
   text-align: center;
   margin: 0%;
-  }
- 
+}
+ /*  Tablero */
   .root {
   color: #994851;
+  width: 50%;
+  height: 70%;
+  align-content: center;
     }
 
   .image{
-    width: 120px;
-    height: 120px;
+    width: 90%;
+    height: 90%;
     }
   
     .hide {
@@ -24,20 +24,20 @@
     .show {
       display: block;
     }
-
     .board {
-      width: 740px;
-      height: 360px;
+      align-self: flex-start;
+      width: 80%;
+      height: 50%;
       margin: auto;
       display: flex;
       flex-wrap: wrap;
-      perspective: 1000px;
       }
 
+    
     .cards {
       position: relative;
-      width: 120px;
-      height: 120px;
+      width: 15%;
+      height: 15%;
       
       
     }
@@ -45,16 +45,23 @@
     .cardBack {
       position: absolute;
     }
-    
+    /*  Tablero */
+
     body {
       background: rgb(255,222,222);
       background: radial-gradient(circle, rgba(255,222,222,1) 0%, rgba(171,201,255,1) 100%);
       }
      
       /*nav bar*/
-.Pokemon-Logo {
-  padding-right: 800px;
-  } 
+  .Pokemon-Logo {
+    justify-content: right;
+    position: relative;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: inline;
+    justify-content: flex-start;
+    margin-right: 50%;
+  }
   .topnav {
       overflow: hidden;
       background-color: transparent;
@@ -113,7 +120,7 @@
   }
   /*end nav bar*/
 
-  /*Footer*/
+/*Footer*/
 
 footer {
   background-color: transparent;
@@ -122,52 +129,61 @@ footer {
   position: absolute;
   margin: 0%;
   margin-top: 5%;
+  text-decoration: none
 }
 .lab {
   width: 30%;
   height: auto;
-  align-items: center;
 }
 .rrss {
   background-color: transparent;
   align-items: left;
   align-self: left;
   position: absolute;
-  margin-left: 92%;
-  margin-bottom: 5%;
+  flex-direction: row;
+  text-decoration: none
+}
+
+.redes {
+  width: 2%;
+  height: 2%;
+  text-decoration: none;
+  flex-direction: row-reverse;
 }
 /*Footer*/
 
 
 h1{ 
+  width: 100%;
+  height: 100%;
   color: #F675A8; 
  font-family: 'Pokemon Solid', sans-serif;
-  font-size: 45px; font-weight: normal; 
+  font-size: 200%; font-weight: normal; 
   text-shadow:
   3px  3px 4px black,
   3px -3px 4px black,
  -3px  3px 4px black,
  -3px -3px 4px black;
-  line-height: 48px; 
-  margin: 0;
+  line-height: 48%; 
+  margin-bottom: 5%;
   text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  margin-top: 5%;
+  
+flex-direction: column;
+  
   }
   
   h2{ 
     color: black; 
-    font-family: 'Trocchi', serif; 
-    font-size: 45px; font-weight: normal; 
-    line-height: 48px; 
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 100%; font-weight: normal; 
+    line-height: 40%; 
     margin: 0;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 20px;
-    padding-bottom: 0px;
+    padding-left: 50%;
+    padding-right: 50%;
+    padding-top: 10%;
+    align-content: center;
     }
 
     

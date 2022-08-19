@@ -6,10 +6,12 @@ console.log(nameUser)
 //alert ("Hola " + nameUser + " del cohorte " + cohorte + " ahora pondrás a prueba tu memoria");
 
 Swal.fire({
+
+    title: '¿Estas lista?',
+    text: '¡Hora de poner a prueba tu memoria ' + nameUser + ' del cohorte ' + cohorte + ' de Laboratoria!',
+    imageUrl: "/memorymatchtiarenico/whatpokemon.gif",
+    confirmButtonText: '¡Si!',
     
-    title: 'HORA DE JUGAR',
-    text: 'Ahora ' + nameUser + ' del cohorte ' + cohorte + ' pondra a prueba su memoria',
-    imageUrl: "/memorymatchtiarenico/Pokemon-Logo.png",
     
    // background: 'radial-gradient(circle, rgba(255,222,222,1) 0%, rgba(171,201,255,1) 100%)',
         

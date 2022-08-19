@@ -31,25 +31,39 @@ padding-bottom: 20px;
 }
 
 h2 {
-font-family: 'Trocchi', serif; 
-font-size: 24px; 
-font-weight: normal; 
-line-height: 48px; 
-margin: 0;
-color: black;
-text-align: center;
-padding-left: 100px;
-padding-right: 100px;
-padding-top: 10px
-}
+  font-family: 'Pokemon Solid', sans-serif; 
+  font-size: 150%; 
+  text-shadow:
+  3px  3px 4px black,
+  3px -3px 4px black,
+ -3px  3px 4px black,
+ -3px -3px 4px black;
+  font-weight: normal; 
+  line-height: 100%; 
+  color: #F675A8;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+  }
 
 /*nav bar*/
 .Pokemon-Logo {
-padding-right: 800px;
-} 
+  justify-content: right;
+  position: relative;
+  padding-right: 5%;
+  padding-left: 5%;
+  display: inline;
+  justify-content: flex-start;
+  margin-right: 50%;
+}
 .topnav {
     overflow: hidden;
     background-color: transparent;
+    flex-direction: row;
+    justify-content: flex-end;
+    
    }
   
   .topnav a {
@@ -66,6 +80,7 @@ padding-right: 800px;
     text-decoration: none;
     font-size: 17px;
     font-family: 'Pokemon Solid', sans-serif;
+    flex-direction: row;
   }
   
   .topnav a:hover {
@@ -101,6 +116,7 @@ padding-right: 800px;
       float: none;
       display: block;
       text-align: left;
+      
     }
 }
 /*end nav bar*/
@@ -177,6 +193,7 @@ footer {
   position: absolute;
   margin: 0%;
   margin-top: 5%;
+  text-decoration: none
 }
 .lab {
   width: 30%;
@@ -187,8 +204,16 @@ footer {
   align-items: left;
   align-self: left;
   position: absolute;
-  margin-left: 92%;
-  margin-bottom: 5%;
+  flex-direction: row;
+  text-decoration: none
+}
+
+.redes {
+  width: 2%;
+  height: 2%;
+  text-decoration: none;
+  justify-content: right;
+  text-decoration: none
 }
 /*Footer*/
 
@@ -196,32 +221,37 @@ footer {
 h3{ 
   color: #F675A8; 
   font-family: 'Pokemon Solid', sans-serif; 
-  font-size: 45px; font-weight: normal; 
+  font-size: 250%; font-weight: normal; 
   text-shadow:
     3px  3px 4px black,
     3px -3px 4px black,
    -3px  3px 4px black,
    -3px -3px 4px black;
-  line-height: 48px; 
+  line-height: 250%; 
   margin: 0;
   text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 40px;
-  padding-bottom: 20px;
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1%;
   }
   
   h4 {
-  font-family: 'Trocchi', serif; 
-  font-size: 26px; 
+    font-family: 'Pokemon Solid', sans-serif; 
+  font-size: 150%; 
+  text-shadow:
+  3px  3px 4px black,
+  3px -3px 4px black,
+ -3px  3px 4px black,
+ -3px -3px 4px black;
   font-weight: normal; 
-  line-height: 48px; 
-  margin: 0;
-  color: black;
+  line-height: 100%; 
+  color: #F675A8;
   text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 10px;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
   }
  .giphy {
   display: flex;
@@ -236,4 +266,8 @@ h3{
  .contenedorinputs {
   flex-direction: column;
  }
-  
+  .tryagain {
+    width: 30%;
+    height: 30%;
+    margin-left: 30%;
+  }
