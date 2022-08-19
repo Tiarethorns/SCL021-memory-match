@@ -7,7 +7,8 @@
 * [3. Prototipo de baja fidelidad](#3-prototipo-de-baja-fidelidad)
 * [4. Prototipo de alta fidelidad](#4-prototipo-de-alta-fidelidad)
 * [5. Funcionalidades](#5-funcionalidades)
-* [6. Test](#6-test)
+* [6. Diseño Final](#6-diseño-final)
+* [7. Pendiente](#6-pendiente)
 
 ***
 
@@ -19,21 +20,31 @@ En Pokematch se disponen de 18 cartas para dar vuelta y encontrar los pares en u
 ## 2. Historias de Usuario
 Como primer paso decidimos realizar un formulario haciendo diversas preguntas para investigar el interés que existe en la comunidad de laboratoria por la industria de pokemón y sus respectivos juegos. Para esto consultamos principalmente por rangos etarios, género, accesibilidad a las consolas de juego e interés en participar del concurso. con esta data concluimos que el 48,1% tiene entre 26 y 30 años, el 96,3% es de género femenino, el 55,6% ya es usuario de juegos de ppkemón y el 80% lo hace desde su telefóno móvil, el 63% no tiene una consola de nintendo switch y el 74,1% esta interesado en ganar esta consola. Es en vista de los datos anteriores que decidimos utilizar la tematica de pokemon para nuestro juego de memory match, la paleta de colores existente y también darle el contexto de consurso por una consola de nintendo switch.
 
-![](6.jpeg) ![](7.jpeg) ![](8.jpeg) ![](9.jpeg) ![](10.jpeg) ![](11.jpeg) ![](/12.jpeg) ![](13.jpeg)
+![](/imagenes-readme/6.jpeg) ![](/imagenes-readme/7.jpeg) ![](/imagenes-readme/8.jpeg) ![](/imagenes-readme/9.jpeg) ![](/imagenes-readme/10.jpeg) ![](/imagenes-readme/11.jpeg) ![](/imagenes-readme/12.jpeg) ![](/imagenes-readme/13.jpeg)
 
 ## 3. Prototipo de baja fidelidad
 
-![](PBF1.jpeg)![](PBF2.jpeg)
+![](/imagenes-readme/PBF1.jpeg)![](/imagenes-readme/PBF2.jpeg)
 
 
 ## 4. Prototipo de alta fidelidad
 
-![](P1.jpg)
-![](P2.jpg)
-![](P3.jpg)
-![](P4.jpg)
+![](/imagenes-readme/P1.jpg)
+![](/imagenes-readme/P2.jpg)
+![](/imagenes-readme/P3.jpg)
+![](/imagenes-readme/P4.jpg)
 
 ## 5. Funcionalidades
 Nuestro juego de pokematch cuenta con diversas funcionalidades tales como revolver las cartas en cada partida, permitir que el usuario destape de dos en dos haciendo click en el reverso de cada logo de pokebola y que estas se queden destapadas en caso de ser iguales y de lo contrario volver a cubrirse, mostrando el lado del reverso nuevamente. Además agregamos un cronómetro de 40 segundos para agregar un poco más de dificultad y para hacerlo más personalizado recogemos los datos de los jugadores en la página inicial y luego los saludamos por su nombre cuando comienza el juego.
 
-## 7. Test
+## 6. Diseño Final
+![](/Diseñofinal/p1)
+![](/Diseñofinal/p2)
+![](/Diseñofinal/p3)
+![](/Diseñofinal/p4)
+![](/Diseñofinal/p5)
+![](/Diseñofinal/p6)
+
+## 7. Pendiente
+-Implementar timer, sin embargo el juego tiene la funcionalidad básica para que el usuario pueda completar el juego una vez descubra todas las parejas. Si hubieramos implemetado el timer lo habriamos conectado con la página 4 de game over cuando se complete el tiempo sin quer el usuario terminara de descubrir las parejas.
+-Funcionalidad del botón Ok del memory match, idealmente este habría llevado a la página del fin del juego.
