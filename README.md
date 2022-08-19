@@ -38,12 +38,12 @@ Como primer paso decidimos realizar un formulario haciendo diversas preguntas pa
 Nuestro juego de pokematch cuenta con diversas funcionalidades tales como revolver las cartas en cada partida, permitir que el usuario destape de dos en dos haciendo click en el reverso de cada logo de pokebola y que estas se queden destapadas en caso de ser iguales y de lo contrario volver a cubrirse, mostrando el lado del reverso nuevamente. Además agregamos un cronómetro de 40 segundos para agregar un poco más de dificultad y para hacerlo más personalizado recogemos los datos de los jugadores en la página inicial y luego los saludamos por su nombre cuando comienza el juego.
 
 ## 6. Diseño Final
-![](/imagenes-readme/p1)
-![](/imagenes-readme/p2)
-![](/imagenes-readme/p3)
-![](/imagenes-readme/p4)
-![](/imagenes-readme/p5)
-![](/imagenes-readme/p6)
+![](/imagenes-readme/p1.png)
+![](/imagenes-readme/p2.png))
+![](/imagenes-readme/p3.png))
+![](/imagenes-readme/p4.png))
+![](/imagenes-readme/p5.png))
+![](/imagenes-readme/p6.png)
 
 ## 7. Pendiente
 -Implementar timer, sin embargo el juego tiene la funcionalidad básica para que el usuario pueda completar el juego una vez descubra todas las parejas. Si hubieramos implemetado el timer lo habriamos conectado con la página 4 de game over cuando se complete el tiempo sin quer el usuario terminara de descubrir las parejas.
