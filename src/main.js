@@ -57,7 +57,8 @@ domCardsFront.forEach(function (item) {
               imageUrl: "/memorymatchtiarenico/whatpkm.gif",
               imageWidth: 400,
               imageHeight: 250,
-              footer: '<a href="pantalla3.html">Siguiente</a>'
+            }).then(function(){
+              window.location = "pantalla3.html"
             }),
             850
           );

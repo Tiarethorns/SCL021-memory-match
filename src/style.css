@@ -49,14 +49,13 @@ h2 {
   }
 
 /*nav bar*/
-.Pokemon-Logo {
-  justify-content: right;
+.pikachu {
+  width: 10%;
+  height: 10%;
   position: relative;
-  padding-right: 5%;
-  padding-left: 5%;
-  display: inline;
   justify-content: flex-start;
   margin-right: 50%;
+
 }
 .topnav {
     overflow: hidden;
