@@ -8,7 +8,7 @@
 - [4. Prototipo de alta fidelidad](#4-prototipo-de-alta-fidelidad)
 - [5. Funcionalidades](#5-funcionalidades)
 - [6. Diseño Final](#6-diseño-final)
-- [7. Pendiente](#6-pendiente)
+- [7. Pendiente](#7-pendiente)
 
 ---
 
@@ -22,7 +22,7 @@ En Pokematch se dispone de 18 cartas para dar vuelta y encontrar los pares en un
 
 Como primer paso decidimos realizar un formulario haciendo diversas preguntas para investigar el interés que existe en la comunidad de laboratoria por la industria de pokemón y sus juegos. Para esto consultamos principalmente por rangos etarios, género, accesibilidad a las consolas de juego e interés en participar del concurso. con esta data concluimos que el 48,1% tiene entre 26 y 30 años, el 96,3% es de género femenino, el 55,6% ya es usuario de juegos de ppkemón y el 80% lo hace desde su telefóno móvil, el 63% no tiene una consola de nintendo switch y el 74,1% esta interesado en ganar esta consola. Es en vista de los datos anteriores que decidimos utilizar la tematica de pokemon para nuestro juego de memory match, la paleta de colores existente y también darle el contexto de consurso por una consola de nintendo switch.
 
-![](6.jpeg) ![](/imagenes-readme/7.jpeg) ![](/imagenes-readme/8.jpeg)
+![](/imagenes-readme/6.jpeg) ![](/imagenes-readme/7.jpeg) ![](/imagenes-readme/8.jpeg)
 ![](/imagenes-readme/9.jpeg) ![](/imagenes-readme/10.jpeg) ![](/imagenes-readme/11.jpeg)
 ![](/imagenes-readme/12.jpeg) ![](/imagenes-readme/13.jpeg)
 
