@@ -18,10 +18,8 @@ document.getElementById("root").appendChild(App(pokemon.items));
 let domCardsFront = document.querySelectorAll(".front");
 console.log(domCardsFront);
 
-
 let domCardsBack = document.querySelectorAll(".back");
 console.log(domCardsBack);
-
 
 let contador = 0;
 console.log(contador);
@@ -51,15 +49,15 @@ domCardsFront.forEach(function (item) {
           console.log(contador);
           setTimeout(
             () =>
-            Swal.fire({
-              title: "¡Felicitaciones!",
-              text: "Eres una verdadera maestra Pokemon",
-              imageUrl: "/memorymatchtiarenico/whatpkm.gif",
-              imageWidth: 400,
-              imageHeight: 250,
-            }).then(function(){
-              window.location = "pantalla3.html"
-            }),
+              Swal.fire({
+                title: "¡Felicitaciones!",
+                text: "Eres una verdadera maestra Pokemon",
+                imageUrl: "/imagenes/whatpkm.gif",
+                imageWidth: 400,
+                imageHeight: 250,
+              }).then(function () {
+                window.location = "pantalla3.html";
+              }),
             850
           );
         }
@@ -71,7 +69,7 @@ domCardsFront.forEach(function (item) {
           domCardsBack[idsFlipped[0]].classList.remove("show");
           domCardsBack[idsFlipped[0]].classList.add("hide");
           domCardsFront[idsFlipped[0]].classList.add("show");
-          domCardsFront[idsFlipped[0]].classList.remove("hide")
+          domCardsFront[idsFlipped[0]].classList.remove("hide");
           domCardsBack[idsFlipped[1]].classList.remove("show");
           domCardsBack[idsFlipped[1]].classList.add("hide");
           domCardsFront[idsFlipped[1]].classList.add("show");
@@ -83,8 +81,6 @@ domCardsFront.forEach(function (item) {
   });
 });
 
-
-  
 /*function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {

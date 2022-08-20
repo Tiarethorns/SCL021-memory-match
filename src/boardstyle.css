@@ -148,12 +148,6 @@ footer {
   text-decoration: none;
 }
 
-.redes {
-  width: 2%;
-  height: 2%;
-  text-decoration: none;
-  flex-direction: row-reverse;
-}
 /*Footer*/
 
 h1 {
@@ -189,8 +183,4 @@ h2 {
 
 a {
   text-decoration: none;
-}
-
-.iconos {
-  flex-direction: column;
 }
