@@ -16,7 +16,7 @@
 
 Memory match es un juego de cartas en donde todas estas se distribuyen boca abajo y la usuaria va descubriendo de a dos en dos con el fin de conseguir pares iguales hasta que todas esten con su respectiva pareja.
 El contexto de nuestro proyecto es un concurso para las egresadas y estudiantes de Laboratoria en el cual el único requisito es ingresar el cohorte y nombre.
-En Pokematch se dispone de 18 cartas para dar vuelta y encontrar los pares en un tiempo de 40 segundos, si esto se consigue el usuario estará participando por una Nintendo Switch + Pokemon legends: Arceus, de no completar el tablero en el tiempo indicado se le llevará a una pantalla de game over en donde podrá reingresar al juego.
+En Pokematch se dispone de 18 cartas para dar vuelta y encontrar los pares en un tiempo de 40 segundos, si esto se consigue estará participando por una Nintendo Switch + Pokemon legends: Arceus, de no completar el tablero en el tiempo indicado se le llevará a una pantalla de game over en donde podrá reingresar al juego.
 
 ## 2. Historias de Usuario
 
@@ -47,7 +47,7 @@ Como primer paso decidimos realizar un formulario haciendo diversas preguntas pa
 
 ## 5. Funcionalidades
 
-Nuestro juego de pokematch cuenta con diversas funcionalidades tales como revolver las cartas en cada partida, permitir que el usuario destape de dos en dos haciendo click en el reverso de cada logo de pokebola y que estas se queden destapadas en caso de ser iguales y de lo contrario volver a cubrirse, mostrando el lado del reverso nuevamente. Además agregamos un cronómetro de 40 segundos para agregar un poco más de dificultad y para hacerlo más personalizado recogemos los datos de las jugadoras en la página inicial y luego las saludamos por su nombre cuando comienza el juego.
+Nuestro juego de pokematch cuenta con diversas funcionalidades tales como revolver las cartas en cada partida, permitir que el usuario destape de dos en dos haciendo click en el reverso de cada logo de pokebola y que estas se queden destapadas en caso de ser iguales y de lo contrario volver a cubrirse, mostrando el lado del reverso nuevamente. Además agregamos un cronómetro de 40 segundos para dar un poco más de dificultad y para hacerlo más personalizado recogemos los datos de las jugadoras en la página inicial y luego las saludamos por su nombre cuando comienza el juego.
 
 ## 6. Diseño Final
 
@@ -60,7 +60,7 @@ Nuestro juego de pokematch cuenta con diversas funcionalidades tales como revolv
 
 ## 7. Pendiente
 
-Implementar timer, sin embargo el juego tiene la funcionalidad básica para que el usuario pueda completar el juego una vez descubra todas las parejas. Si hubieramos implemetado el timer lo habriamos conectado con la página 4 de game over cuando se complete el tiempo sin quer el usuario terminara de descubrir las parejas.
+Implementar timer, sin embargo el juego tiene la funcionalidad básica para que la usuaria pueda completar el juego una vez descubra todas las parejas de pokemón. Si hubiéramos implemetado el timer lo habriamos conectado con la página cuatro de game over cuando se complete el tiempo sin quer el usuario terminara de descubrir las parejas.
 Por el momento no se ha logrado desplegar el proyecto de manera correcta en GitHub Pages, por lo que de manera provisoria se ingresa directamente a la segunda página que recibe a la usuaria con un alert y luego el tablero de juego.
 
 https://tiarethorns.github.io/SCL021-memory-match/src/memorymatch.html
