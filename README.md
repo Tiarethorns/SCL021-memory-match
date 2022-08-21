@@ -60,4 +60,7 @@ Nuestro juego de pokematch cuenta con diversas funcionalidades tales como revolv
 
 ## 7. Pendiente
 
--Implementar timer, sin embargo el juego tiene la funcionalidad básica para que el usuario pueda completar el juego una vez descubra todas las parejas. Si hubieramos implemetado el timer lo habriamos conectado con la página 4 de game over cuando se complete el tiempo sin quer el usuario terminara de descubrir las parejas.
+Implementar timer, sin embargo el juego tiene la funcionalidad básica para que el usuario pueda completar el juego una vez descubra todas las parejas. Si hubieramos implemetado el timer lo habriamos conectado con la página 4 de game over cuando se complete el tiempo sin quer el usuario terminara de descubrir las parejas.
+Por el momento no se ha logrado desplegar el proyecto de manera correcta en GitHub Pages, por lo que de manera provisoria se ingresa directamente a la segunda página que recibe a la usuaria con un alert y luego el tablero de juego.
+
+https://tiarethorns.github.io/SCL021-memory-match/src/memorymatch.html
