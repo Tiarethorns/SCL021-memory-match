@@ -13,7 +13,7 @@ Swal.fire({
     " del cohorte " +
     cohorte +
     " de Laboratoria!",
-  imageUrl: "/imagenes/whatpokemon.gif",
+  imageUrl: "imagenes/whatpokemon.gif",
   confirmButtonText: "¡Si!",
 
   // background: 'radial-gradient(circle, rgba(255,222,222,1) 0%, rgba(171,201,255,1) 100%)',
