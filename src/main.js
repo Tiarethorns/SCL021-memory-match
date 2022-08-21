@@ -52,7 +52,7 @@ domCardsFront.forEach(function (item) {
               Swal.fire({
                 title: "¡Felicitaciones!",
                 text: "Eres una verdadera maestra Pokemon",
-                imageUrl: "/imagenes/whatpkm.gif",
+                imageUrl: "imagenes/whatpkm.gif",
                 imageWidth: 400,
                 imageHeight: 250,
               }).then(function () {
