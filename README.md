@@ -41,7 +41,6 @@ Como primer paso decidimos realizar un formulario haciendo diversas preguntas pa
 
 ![P1](https://user-images.githubusercontent.com/106929329/185771050-4b2deef7-8250-4c46-a6a4-a5c500fc8351.jpg)
 ![P2](https://user-images.githubusercontent.com/106929329/185771072-2d1eda0f-5570-444c-a0b0-7ea0f69feb79.jpg)
-![P3](https://user-images.githubusercontent.com/106929329/185771076-1620405a-5390-487a-98a9-aecb4627461a.jpg)
 ![P3](https://user-images.githubusercontent.com/106929329/185771056-f35eb2ff-ccb8-4fd8-a19c-5cfd1164f650.jpg)
 ![P4](https://user-images.githubusercontent.com/106929329/185771094-f5a6f49f-b61c-4f52-9786-53e3991e5cac.jpg)
 
