@@ -22,13 +22,11 @@ const handleClick = (cardBack, cardFront) => {
   //console.log(event.target)
 };
 
-
-
 const App = (baraja) => {
- // const baraja = pokemon.items;
- function shuffle() {
-   barajaDoble.sort(() => Math.random() - 0.5);
- }
+  // const baraja = pokemon.items;
+  function shuffle() {
+    barajaDoble.sort(() => Math.random() - 0.5);
+  }
   //console.log(baraja);
 
   var barajaDoble = baraja.concat(baraja);
@@ -52,8 +50,6 @@ const App = (baraja) => {
     cardBack.setAttribute("data-id", barajaDoble[i].id);
     cardBack.setAttribute("data-index", i);
 
-
-
     cards.appendChild(cardBack);
 
     const backImage = document.createElement("img");
@@ -75,28 +71,17 @@ const App = (baraja) => {
     const cardImage = document.createElement("img");
     cardImage.alt = "pokeball";
     cardImage.className = "image";
-    cardImage.src =
-      "https://pngimg.com/uploads/pokeball/pokeball_PNG22.png";
+    cardImage.src = "https://pngimg.com/uploads/pokeball/pokeball_PNG22.png";
     cardFront.appendChild(cardImage);
 
     cardFront.onclick = (event) => {
       handleClick(cardBack, cardFront, event);
-      flipTwo.push({id:barajaDoble[i].id,index:i})
+      flipTwo.push({ id: barajaDoble[i].id, index: i });
       console.log(flipTwo);
-
-      
     };
-   
-
-   
-
-
   }
 
-
-  
   return board;
 };
-
 
 export default App;
